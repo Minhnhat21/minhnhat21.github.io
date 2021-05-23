@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+html {
+    font-family: 'Inter','Lexend Deca', sans-serif;
+    max-width: 1440px;
+}
+body {
+    background-color: hsl(233, 47%, 7%);
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 375px){
+
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+.col-50{
+    width: 50%;
+    float:left;
+}
+.container {
+    margin:0 auto;
+    padding:0 15px 0 15px;
+    color: #ffff;
+    width: 1000px;
+    height: 400px;
+    margin: 200px 240px;
+   
+    position: relative;
+    
+}
+.container .right {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: hsl(244, 38%, 16%);
+    height: 400px;
+}
+.container .image{
+    background-image: url("/images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    border-radius: 0px 8px 8px 0;
+    height: 400px;
+    width: 500px;
+    float: right;
+}
+.container .image .opac{
+    width: 100%;
+    background-color: hsl(277, 64%, 61%,0.70);
+    height: 100%;
+    border-radius: 0px 8px 8px 0;
+
+}
+
+.container .content {
+    width: 80%;
+    height: 400px;
+    margin: 50px 55px;
+}
+.content .content-header{
+    margin-bottom: 30px;
+}
+.content .content-header strong{
+    color: hsl(277, 64%, 61%);
+}
+.content .p-content{
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 90%;
+    opacity: 0.5;
+}
+.content .box {
+    margin-top: 60px;
+    display: inline-block;
+}
+.content .box .box-30 {
+    width: calc(100%/5);
+    margin-right: 50px;
+}
+.content .box p{
+    font-size: 15px;
+    opacity: 0.5;
+  
+    padding: 0px 2px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        margin-top: 50px;
+        margin:0 auto;
+        padding:0 15px 0 15px;
+        width: 375px;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .image{
+        background-image: url("/images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 375px;
+        margin-top: 50px;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .right {
+        background-color: hsl(244, 38%, 16%);
+        width: 375px;
+        height: auto;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .container .image .opac {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .content {
+        text-align: center;
+        width: 80%;
+        height: 100%;
+        margin: 20px 0px 10px 20px;
+        padding:0 15px 0 15px;
+    }
+    .container  .content .p-content {
+        margin-left: 15px;
+    }
+    .content .box .box-30 {
+        width: 50%;
+        text-align: center;
+        margin-left: 70px;
+        margin-bottom: 30px;
+    }
+    .content .box .box-30 p{
+        font-size: 12px;
+    }
+    
+}
